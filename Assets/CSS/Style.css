@@ -6,53 +6,143 @@ body {
     color: rgb(41, 39, 39);
 }
 
+
 .navbar {
     padding: 0px;
-    /* opacity: 0.7; */
     background-color: black;
     color: rgb(173, 171, 171);
-    font-size: 20px;
+    font-size: 17px;
 }
-.navbar-brand {
-   
+
+.navbar-brand {   
     padding: 5px 40px 0px 40px;
     margin-left: 60px;
+    margin-right: 0px;
     background: rgb(241, 241, 241);
     color: rgb(14, 13, 13);
     font-size: 60px !important;
     font-family: 'Libre Barcode 39 Text', cursive;  
+
 }
-.nav-link {
+
+.nav-link {    
     color: rgb(173, 171, 171);
 }
 .nav-link .active {
     color: whitesmoke;
 }
-.divider {
-    opacity: 0.2;
-}
+
 ul {
-    padding: 40px 40px 0px 0px;
+    margin: 0px;
 }
+
+.divider {
+    opacity: 0.3;
+}
+
 a:visited {
     color: rgb(173, 171, 171);
 }
+
 a:hover {
     color: rgb(196, 75, 54);
 }
+
 a:active {
     color: rgb(255, 38, 0);
 }
 
 
+.container {
+    margin: 60px 90px 0px 45px;
+}
+
 .aboutMe {
-    
     background-color: rgb(241, 241, 241);
     padding: 40px;
     box-shadow: 6px 10px;
 
 }
 
-.container {
-    margin: 20px 60px 0px 60px;
+
+@media screen and (max-width: 980px){
+
+    .navbar {
+        font-size: 15px;
+        padding: 0px;
+    }
+
+    .navbar-brand {
+        padding: 5px 30px 0px 30px;
+        margin-left: 40px;
+        font-size: 35px !important ;
+    }
+    ul {
+        padding: 10px 20px 0px 0px;
+    }
+    .divider{
+        font-size: 30px;
+    }
+
+    .resize {
+        width: 300px;
+        height: auto;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+
+    .navbar {
+        font-size: 12px;
+    }
+
+    .navbar-brand {
+        margin: 0px 0px 0px 20px;
+        padding: 0px 10px 0px 10px;
+        font-size: 30px !important ;
+    }
+    ul {
+        padding: 0px;
+        margin: 0px;
+    }
+    .divider{
+        font-size: 20px;
+    }
+
+    .resize {
+        width: 200px;
+        height: auto;
+    }
+    
+}
+
+@media screen and (max-width: 640px){
+
+    .navbar {
+        font-size: 12px;
+    }
+
+    .navbar-brand {
+        margin-left: 31%;
+        margin-right: 31%;
+        padding: 0px 10px 0px 10px;
+        font-size: 30px !important ;
+        justify-content: center !important;
+    }
+    ul {
+        /* padding: 0px 60px 0px 60px; */
+        margin-left: 29.5%;
+        margin-right: 29%x;
+        justify-content: center !important;
+    }
+    .divider{
+        font-size: 20px;
+    }
+
+    .resize {
+        width: 100px;
+        height: auto;
+    }
+    
 }
