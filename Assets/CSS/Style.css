@@ -15,9 +15,8 @@ body {
 }
 
 .navbar-brand {   
-    padding: 5px 40px 0px 40px;
+    padding: 0px 40px 0px 40px;
     margin-left: 60px;
-    margin-right: 0px;
     background: rgb(241, 241, 241);
     color: rgb(14, 13, 13);
     font-size: 60px !important;
@@ -34,6 +33,8 @@ body {
 
 ul {
     margin: 0px;
+    padding: 40px 20px 0px 0px;
+   
 }
 
 .divider {
@@ -54,16 +55,22 @@ a:active {
 
 
 .container {
-    margin: 60px 90px 0px 45px;
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 0px;
 }
 
-.aboutMe {
+.card {
     background-color: rgb(241, 241, 241);
-    padding: 40px;
+    padding: 20px;
     box-shadow: 6px 10px;
+   
 
 }
 
+.card-body {
+    font-size: 10px;
+}
 
 @media screen and (max-width: 980px){
 
@@ -71,11 +78,10 @@ a:active {
         font-size: 15px;
         padding: 0px;
     }
-
     .navbar-brand {
-        padding: 5px 30px 0px 30px;
-        margin-left: 40px;
-        font-size: 35px !important ;
+        margin: 0px 0px 0px 20px;
+        padding: 0px 10px 0px 10px;
+        font-size: 40px !important ;
     }
     ul {
         padding: 10px 20px 0px 0px;
@@ -83,11 +89,12 @@ a:active {
     .divider{
         font-size: 30px;
     }
+    /* .container {
+        margin-top: 30px;
+        margin-left: 10px;
+    } */
 
-    .resize {
-        width: 300px;
-        height: auto;
-    }
+   
     
 }
 
@@ -96,11 +103,10 @@ a:active {
     .navbar {
         font-size: 12px;
     }
-
     .navbar-brand {
         margin: 0px 0px 0px 20px;
         padding: 0px 10px 0px 10px;
-        font-size: 30px !important ;
+        font-size: 40px !important ;
     }
     ul {
         padding: 0px;
@@ -110,10 +116,13 @@ a:active {
         font-size: 20px;
     }
 
-    .resize {
-        width: 200px;
-        height: auto;
-    }
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+   }   
+   
+    
+    
     
 }
 
@@ -122,7 +131,6 @@ a:active {
     .navbar {
         font-size: 12px;
     }
-
     .navbar-brand {
         margin-left: 31%;
         margin-right: 31%;
@@ -136,13 +144,13 @@ a:active {
         margin-right: 29%x;
         justify-content: center !important;
     }
-    .divider{
+    .divider {
         font-size: 20px;
     }
 
-    .resize {
-        width: 100px;
-        height: auto;
-    }
+   .container {
+        margin-left: auto;
+        margin-right: auto;
+   }    
     
 }
