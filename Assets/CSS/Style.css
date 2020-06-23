@@ -1,7 +1,7 @@
 
 body {
-    background-image: url(../images/cartographer.png);
-    background-color: rgb(19, 19, 19);
+    background-image: url("https://santu14.github.io/assets/images/cartographer.png");
+    background-color: rgb(177, 212, 252);
     font-family: 'Fira Code', monospace;
     color: rgb(41, 39, 39);
 }
