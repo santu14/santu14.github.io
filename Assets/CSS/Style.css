@@ -79,6 +79,27 @@ body {
 .card-body {
     font-size: 10px;
 }
+
+
+.projectImg{
+    padding: 10px;
+}
+section {
+    position: relative;
+}
+
+section h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    background-color: black;
+    color: whitesmoke;
+    opacity: 0.7;
+    width: 280px;
+    font-size: small;
+    text-align: center;
+    padding: 20px;
+}
 /* ----------------Media Query's------------- */
 
 @media screen and (max-width: 980px){
