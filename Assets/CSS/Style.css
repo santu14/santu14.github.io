@@ -6,64 +6,71 @@ body {
     color: rgb(41, 39, 39);
 }
 
-
+/* ----------------Navbar------------- */
 .navbar {
     padding: 0px;
     background-color: black;
     color: rgb(173, 171, 171);
-    font-size: 17px;
+    font-size: 13px;
 }
 
 .navbar-brand {   
     padding: 0px 40px 0px 40px;
     margin-left: 60px;
- 
     background: rgb(241, 241, 241);
     color: rgb(14, 13, 13);
-    font-size: 60px !important;
+    font-size: 50px !important;
     font-family: 'Libre Barcode 39 Text', cursive;  
 
 }
+    /* ----------------Navbar Links------------- */
 
-.nav-link {    
-    color: rgb(173, 171, 171);
-}
-.nav-link .active {
-    color: whitesmoke;
-}
-
-ul {
-    margin: 0px;
-    padding: 40px 20px 0px 0px;
+    .nav-link {    
+        color: rgb(173, 171, 171);
+    }
+    .nav-link .active {
+        color: whitesmoke;
+    }
    
-}
 
-.divider {
-    opacity: 0.3;
-}
+    ul {
+        margin: 0px;
+        padding: 0px 20px 0px 0px;
+    
+    }
 
-a:visited {
-    color: rgb(173, 171, 171);
-}
+    .divider {
+        opacity: 0.3;
+    }
 
-a:hover {
-    color: rgb(196, 75, 54);
-}
+    a:visited {
+        color: rgb(173, 171, 171);
+    }
 
-a:active {
-    color: rgb(255, 38, 0);
-}
+    a:hover {
+        color: rgb(196, 75, 54);
+    }
 
+    a:active {
+        color: rgb(255, 38, 0);
+    }
+
+/* ----------------Content------------- */
 
 .container {
     margin-top: 60px;
-    margin-left: 60px;
+    margin-left: 45px;
     margin-right: 0px;
+
+    
+}
+.container p{
+    font-size: 15px;
 }
 
 .card {
     background-color: rgb(241, 241, 241);
-    padding: 20px;
+    padding: 17px;
     box-shadow: 6px 10px;
    
 
@@ -72,6 +79,7 @@ a:active {
 .card-body {
     font-size: 10px;
 }
+/* ----------------Media Query's------------- */
 
 @media screen and (max-width: 980px){
 
@@ -80,7 +88,7 @@ a:active {
         padding: 0px;
     }
     .navbar-brand {
-        margin: 0px 0px 0px 20px;
+        margin-left: 20px;
         padding: 0px 10px 0px 10px;
         font-size: 40px !important ;
     }
@@ -90,10 +98,13 @@ a:active {
     .divider{
         font-size: 30px;
     }
-    /* .container {
+    .container {
         margin-top: 30px;
-        margin-left: 10px;
-    } */
+        margin-left: 8px;
+    }
+    .resize {
+        width: 200px;
+    }
 
    
     
@@ -104,24 +115,21 @@ a:active {
     .navbar {
         font-size: 12px;
     }
-    .navbar-brand {
-        margin: 0px 0px 0px 20px;
-        padding: 0px 10px 0px 10px;
-        font-size: 40px !important ;
-    }
-    ul {
-        padding: 0px;
-        margin: 0px;
-    }
+
     .divider{
         font-size: 20px;
     }
 
     .container {
-        margin-left: auto;
-        margin-right: auto;
-   }   
-   
+       
+        margin: 30px 8px 0px 8px;
+    }
+    .resize {
+        width: 200px;
+    }  
+    .container p{
+        font-size: 10px;
+    }
     
     
     
@@ -136,12 +144,9 @@ a:active {
         margin: 0;
         width: 100%;
         text-align: center;
-        padding: 0px 10px 0px 10px;
-        font-size: 40px !important ;
-        justify-content: center !important;
+        
     }
     ul {
-        /* padding: 0px 60px 0px 60px; */
         margin-left: 29.5%;
         margin-right: 29%x;
         justify-content: center !important;
@@ -153,6 +158,15 @@ a:active {
    .container {
         margin-left: auto;
         margin-right: auto;
-   }    
-  
+   }  
+   .resize {
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+ 
+        
+   }  
+   h4 {
+       text-align: center;
+   }
 }
