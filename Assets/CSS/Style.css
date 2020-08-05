@@ -23,6 +23,15 @@ body {
     font-family: 'Libre Barcode 39 Text', cursive;  
 
 }
+.menu-text {   
+    padding: 0px 40px 0px 40px;
+    margin-left: 60px;
+    background: rgb(241, 241, 241);
+    color: rgb(14, 13, 13);
+    font-size: 50px 
+    font-family: 'Libre Barcode 39 Text', cursive;  
+
+}
     /* ----------------Navbar Links------------- */
 
     .nav-link {    
@@ -61,7 +70,7 @@ body {
     margin-top: 60px;
     margin-left: 45px;
     margin-right: 0px;
-
+    opacity: 1;
     
 }
 .container p{
@@ -72,6 +81,7 @@ body {
     background-color: rgb(241, 241, 241);
     padding: 17px;
     box-shadow: 6px 10px;
+    justify-content: center;
    
 
 }
