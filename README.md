@@ -1,12 +1,7 @@
 # Responsive Portfolio
 
-This is a responsive portfolio made with HTML CSS and bootstrap.
+This is a responsive and dynamic portfolio made with HTML, CSS, Bootstrap, JavaScript, and jQuery.
 
-## Homework Assignment
-
-this portfolio is a project where we took existing photos of a pre-made website and were asked to recreate the layout but with our own pictures and information.
-
-I used media queries and bootstrap's responsive classes to manipulate the element of the page as the resolution changes.
 
 
 
