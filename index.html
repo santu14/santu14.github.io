@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Libre+Barcode+39+Text&family=Ramabhadra&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Libre+Barcode+39+Text&family=Ramabhadra&display=swap"
+        rel="stylesheet">
+
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -16,50 +19,90 @@
 
 
 <body>
-    
-
-    
-    
-    <nav class="navbar">
-        
-        <span class="navbar-brand mb-0 h1">Santiago Solana</span>
-        
-        <ul class="nav justify-content-end"> 
-
-            <li class="nav-item">
-                <a class="nav-link" id="about" href="#">About</a>
-            </li>
-
-            <li class="nav-item">
-                <h1 class="divider">|</h1>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" id="portfolio" href="#">Portfolio</a>
-            </li>
-
-            <li class="nav-item">
-                <h1 class="divider">|</h1>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" id="contact" href="#">Contact</a>
-            </li>
-
-        </ul>
-
-    </nav>
-    
 
 
-    <main class="container" >
 
-       <div id="content">
 
-       </div>
- 
+
+
+
+
+
+
+
+
+    <main class="container">
+
+        <div id="header-card" class="card justify-content-center">
+
+
+            <div class="typewriter">
+                <h1>Hello, my name is Santiago Solana.</h1>
+            </div>
+            <ul class="nav justify-content-center">
+
+                <li class="nav-item">
+                    <a class="nav-link" id="about" href="#">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <h1 class="divider">|</h1>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" id="portfolio" href="#">Portfolio</a>
+                </li>
+
+                <li class="nav-item">
+                    <h1 class="divider">|</h1>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" id="contact" href="#">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div id="content">
+            <div class="card justify-content-center">
+
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+
+                        <h4 class="card-title">About Me</h4>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row no-gutters">
+
+                    <div class="col-md-4">
+
+                        <img class="resize" src="Assets/Images/Selfie.jpg" alt="Santiago Solana" width="300"
+                            height="auto">
+
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="card-body">
+
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
+                                veritatis eligendi, eos quia quod maxime iusto? Maxime eius accusamus atque eveniet hic.
+                                Laboriosam nostrum quaerat placeat incidunt, vero eveniet esse!</p>
+                            <p class="card-text"><small class="text-muted">6/23/2020</small></p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </main>
-              
+
+
 
 
 
@@ -68,20 +111,27 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
     <script>
 
 
 
-        const container =  $("#content");
-        $("#about").on("click", ()=>{
+        const container = $("#content");
+        setTimeout(() => {
+        container.animate({ opacity: "1" }, 700);
+        }, 3600);
+        $("#about").on("click", () => {
 
             event.preventDefault()
             container.animate({ opacity: "0" });
-         
+
             setTimeout(() => {
-                
+
                 container.empty()
                 container.append(`
 
@@ -115,98 +165,75 @@
                         </div>
                     </div>
                 `)
-                    }, 400)              
-           
+            }, 400)
+
             container.animate({ opacity: "1" });
 
 
         });
 
 
-        $("#portfolio").on("click", ()=>{
+        $("#portfolio").on("click", () => {
             event.preventDefault()
             container.animate({ opacity: "0" });
-           
-         
+
+
             setTimeout(() => {
-            container.empty()
-                
-            container.append(`
+                container.empty()
+
+                container.append(`
            
               
 
                     <div class="card justify-content-center" >
 
-                        <div class="row">
-                            <div class="col-md-12">
-
-                                <h4 class="card-title">Portfolio</h4>
-                                <hr>
+                        <div class="card-group">
+                            <div class="card">
+                                <img class="card-img-top" src="..." alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div class="row">
-
-                        <section class="col-md-4">
-
-                            <img class="projectImg" src="Assets/Images/dice.jpg" alt="Dice" width="300" height="200">
-                            <h3 class="projectTitle">RPG Game</h3>
-
-                        </section>
-                        <section class="col-md-4">
-
-                            <img class="projectImg" src="Assets/Images/RPS.jpg" alt="Rock Paper Scissors" width="300" height="200">
-                            <h3 class="projectTitle">Rock paper Scissors</h3>
-
-                        </section>
-
-
-                        </div>
-                        <div class="row">
-
-                            <section class="col-md-4">
-            
-                            <img class="projectImg" src="Assets/Images/woodtype-846089_640.jpg" alt="WoodType" width="300" height="200">
-                            <h3 class="projectTitle">Word guess</h3>
-                            </section>
-                            <section class="col-md-4">
-            
-                            <img class="projectImg" src="Assets/Images/confused.jpg" alt="Confused" width="300" height="200">
-                            <h3 class="projectTitle">Trivia Game</h3>
-                            </section>
-            
-            
-                        </div>
-                        <div class="row">
-
-                            <section class="col-md-4">
-            
-                            <img class="projectImg" src="Assets/Images/computer.jpg" alt="Computer" width="300" height="200">
-                            <h3 class="projectTitle">Info Widget</h3>
-                            
-            
-                        </section>
+                            <div class="card">
+                                <img class="card-img-top" src="..." alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="..." alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            </div>
 
                     </div>
 
                     
                
             `);
-        }, 400) 
+            }, 400)
             container.animate({ opacity: "1" });
-            
+
         });
 
 
-        $("#contact").on("click", ()=>{
+        $("#contact").on("click", () => {
             event.preventDefault()
             container.animate({ opacity: "0" });
-           
-         
+
+
             setTimeout(() => {
-            container.empty()
-                
-            container.append(`
+                container.empty()
+
+                container.append(`
            
               
 
@@ -236,12 +263,13 @@
                     
                
             `);
-        }, 400) 
+            }, 400)
             container.animate({ opacity: "1" });
-            
+
         });
 
     </script>
 
 </body>
+
 </html>

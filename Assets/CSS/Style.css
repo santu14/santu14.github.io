@@ -2,40 +2,45 @@
 body {
     background-image: url(https://santu14.github.io/Assets/Images/cartographer.png);
     background-color: rgb(177, 212, 252);
-    font-family: 'Fira Code', monospace;
     color: rgb(41, 39, 39);
+    font-family: 'Fira Code', monospace;
 }
 
+/* body {
+    background: linear-gradient(-45deg, #af4747, #9651c4, #5c6dbb, #5ccfb6);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+} */
+
+/* @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#bkg-img {
+    width: 100%;
+    height: 1000px;
+    background-image: url(https://santu14.github.io/Assets/Images/cartographer.png);
+
+} */
 /* ----------------Navbar------------- */
-.navbar {
-    padding: 0px;
-    background-color: black;
-    color: rgb(173, 171, 171);
-    font-size: 13px;
+
+
+#header-card{
+    margin-bottom: 60px;
 }
 
-.navbar-brand {   
-    padding: 0px 40px 0px 40px;
-    margin-left: 60px;
-    background: rgb(241, 241, 241);
-    color: rgb(14, 13, 13);
-    font-size: 50px !important;
-    font-family: 'Libre Barcode 39 Text', cursive;  
-
-}
-.menu-text {   
-    padding: 0px 40px 0px 40px;
-    margin-left: 60px;
-    background: rgb(241, 241, 241);
-    color: rgb(14, 13, 13);
-    font-size: 50px 
-    font-family: 'Libre Barcode 39 Text', cursive;  
-
-}
     /* ----------------Navbar Links------------- */
 
     .nav-link {    
-        color: rgb(173, 171, 171);
+        color: rgb(14, 14, 14);
     }
     .nav-link .active {
         color: whitesmoke;
@@ -44,7 +49,7 @@ body {
 
     ul {
         margin: 0px;
-        padding: 0px 20px 0px 0px;
+        padding: 0px 20px 0px 20px;
     
     }
 
@@ -68,10 +73,13 @@ body {
 
 .container {
     margin-top: 60px;
-    margin-left: 45px;
-    margin-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
     opacity: 1;
     
+}
+#content {
+    opacity: 0;
 }
 .container p{
     font-size: 15px;
@@ -87,7 +95,7 @@ body {
 }
 
 .card-body {
-    font-size: 10px;
+    font-size: 10px; 
 }
 
 
@@ -201,3 +209,31 @@ section h3 {
        text-align: center;
    }
 }
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    text-align: center;
+    border-right: .15em solid rgb(0, 0, 0); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(50, end),
+      blink-caret .75s step-end infinite;
+  }
+  .typewriter {
+    margin: 60px auto 30px auto ;
+    width: fit-content;
+}
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 43ch }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(37, 36, 36); }
+  }
