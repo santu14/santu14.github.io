@@ -1,6 +1,6 @@
 # Responsive Portfolio
 
-This is a responsive and dynamic portfolio made with HTML, CSS, Bootstrap, JavaScript, and jQuery.
+A responsive and dynamic Portfolio page to showcase my projects and skills. Created using HTML, CSS, javascript, jQuery, and Bootstrap.
 
 
 
