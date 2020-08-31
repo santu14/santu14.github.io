@@ -2,45 +2,29 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Libre+Barcode+39+Text&family=Ramabhadra&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 
-
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="Assets/CSS/Style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/Style.css" />
 
     <title>Santiago Solana</title>
-
 </head>
 
-
 <body>
-
-
-
-
-
-
-
-
-
-
-
-
     <main class="container">
 
+
+        <!-- -----------------Header--------------------- -->
         <div id="header-card" class="card justify-content-center">
-
-
             <div class="typewriter">
                 <h1>Hello, my name is Santiago Solana.</h1>
             </div>
             <ul class="nav justify-content-center">
-
                 <li class="nav-item">
                     <a class="nav-link" id="about" href="#">About</a>
                 </li>
@@ -60,54 +44,52 @@
                 <li class="nav-item">
                     <a class="nav-link" id="contact" href="#">Contact</a>
                 </li>
-
             </ul>
-
         </div>
+
+
+        <!-- ------------------------------------- -->
+       
+        
 
         <div id="content">
             <div class="card justify-content-center">
-
                 <div class="row no-gutters">
                     <div class="col-md-12">
-
                         <h4 class="card-title">About Me</h4>
-                        <hr>
+                        <hr />
                     </div>
                 </div>
 
                 <div class="row no-gutters">
-
                     <div class="col-md-4">
-
                         <img class="resize" src="Assets/Images/Selfie.jpg" alt="Santiago Solana" width="300"
-                            height="auto">
-
+                            height="auto" />
                     </div>
 
-                    <div class="col-md-5">
+                    <div class="col-md-7">
                         <div class="card-body">
-
-                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
-                                veritatis eligendi, eos quia quod maxime iusto? Maxime eius accusamus atque eveniet hic.
-                                Laboriosam nostrum quaerat placeat incidunt, vero eveniet esse!</p>
-                            <p class="card-text"><small class="text-muted">6/23/2020</small></p>
-
+                            <p class="card-text">
+                                I am an aspiring web developer currently enrolled in Georgia
+                                Tech’s Full-Stack dev bootcamp, becoming proficient in
+                                technologies like JavaScript, jQuery, CSS, and Node.js. With a
+                                strong background in Audio engineering design and Customer
+                                support you could say I have a passion for learning new
+                                technologies and have developed excellent problem solving,
+                                research, teamwork, and communication skills over the years.
+                                The key factors that drive my decisions when approaching a new
+                                project are creativity responsiveness and functionality, I am
+                                dedicated to creating robust interactive user experiences.
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted">8/07/2020</small>
+                            </p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
-
     </main>
-
-
-
-
-
-
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -118,21 +100,16 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
     <script>
-
-
-
         const container = $("#content");
         setTimeout(() => {
-        container.animate({ opacity: "1" }, 700);
+            container.animate({ opacity: "1" }, 700);
         }, 3600);
         $("#about").on("click", () => {
-
-            event.preventDefault()
+            event.preventDefault();
             container.animate({ opacity: "0" });
 
             setTimeout(() => {
-
-                container.empty()
+                container.empty();
                 container.append(`
 
                     <div class="card justify-content-center" >
@@ -140,7 +117,7 @@
                         <div class="row no-gutters">
                             <div class="col-md-12">
 
-                                <h4 class="card-title">About Me</h4>
+                                <h4 class="card-title ">About Me</h4>
                                 <hr>
                             </div>
                         </div>
@@ -153,108 +130,298 @@
 
                             </div>
 
-                            <div class="col-md-5">
+                            <div class="col-md-7">
                                 <div class="card-body">
                                 
-                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto veritatis eligendi, eos quia quod maxime iusto? Maxime eius accusamus atque eveniet hic. Laboriosam nostrum quaerat placeat incidunt, vero eveniet esse!</p>
-                                <p class="card-text"><small class="text-muted">6/23/2020</small></p>
+                                <p class="card-text"> 
+                                    I am an aspiring web developer currently enrolled in Georgia Tech’s Full-Stack dev bootcamp, becoming proficient in technologies like JavaScript, jQuery, CSS, and Node.js. With a strong background in Audio engineering design and Customer support you could say I have a passion for learning new technologies and have developed excellent problem solving, research, teamwork, and communication skills over the years. The key factors that drive my decisions when approaching a new project are creativity responsiveness and functionality, I am dedicated to creating robust interactive user experiences. 
+                                </p>
+                                <p class="card-text"><small class="text-muted">8/07/2020</small></p>
 
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                `)
-            }, 400)
+                `);
+            }, 400);
 
             container.animate({ opacity: "1" });
-
-
         });
 
-
         $("#portfolio").on("click", () => {
-            event.preventDefault()
+            event.preventDefault();
             container.animate({ opacity: "0" });
 
-
             setTimeout(() => {
-                container.empty()
-
+                container.empty();
                 container.append(`
            
               
 
-                    <div class="card justify-content-center" >
+                <div class="card-deck justify-content-center">
 
-                        <div class="card-group">
-                            <div class="card">
-                                <img class="card-img-top" src="..." alt="Card image cap">
-                                <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top" src="..." alt="Card image cap">
-                                <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top" src="..." alt="Card image cap">
-                                <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                            </div>
+                <!-- -------------------------------------------------------------------------------------------- -->
+                <div class="card project" style="width: 40rem;">
+                    <h5 class="modal-title text-center" id="staticBackdropLabel">
+                        Testing center Locator
+                    </h5>
+                    <hr>
 
+                    <a href="#" data-toggle="modal" data-target="#ModalOne">
+                        <img class="project-img" src="Assets/Images/testing-center-locator.gif"
+                            alt="Testing center Locator" />
+                    </a>
+
+                    <div class="modal fade" id="ModalOne" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-center" id="ModalLabel">
+                                        Testing center Locator
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="Assets/Images/testing-center-animated.gif" alt="Testing center Locator" />
+                                    <hr>
+
+                                    <p>
+                                        The COVID-19 Testing Center Locator is an interactive
+                                        application where users can find nearby COVID-19 testing
+                                        centers and receive the latest relevant news articles, CDC
+                                        updates, as well as state and national statistics.
+                                    </p>
+
+                                </div>
+                                <div class="project-buttons">
+                                    <hr>
+
+                                    <a href="https://easyacres.github.io/TestingCenterLocator/" target="_blank"
+                                        type="button" class="btn btn-primary ">
+
+                                        <i class="fas fa-globe-americas"></i>
+                                        Live site
+                                    </a>
+
+                                    <a href="https://github.com/santu14/TestingCenterLocator" target="_blank" type="button"
+                                        class="btn btn-secondary">
+                                        <i class="far fa-eye"></i>
+                                        View source code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <!-- -------------------------------------------------------------------------------------------- -->
+                <div class="card project">
+                    <h5 class="modal-title text-center" id="staticBackdropLabel">
+                        Weather dashboard
+                    </h5>
+                    <hr>
+                    <a href="#" data-toggle="modal" data-target="#ModalTwo">
+                        <img class="project-img" src="Assets/Images/Weather-Dashboard.gif" alt="Weather-Dashboard" />
+                    </a>
+
+                    <div class="modal fade" id="ModalTwo" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-center" id="ModalLabel">
+                                        Testing center Locator
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="Assets/Images/Weather-dashboard-animated.gif" alt="Weather-Dashboard" />
+                                    <hr>
+
+                                    <p>
+                                        A Weather Dashboard application which shows users weather
+                                        data based on the cities they input.
+                                    </p>
+
+                                </div>
+                                <div class="project-buttons">
+                                    <hr>
+
+                                    <a href="https://santu14.github.io/Weather-Dashboard/" target="_blank" type="button"
+                                        class="btn btn-primary ">
+
+                                        <i class="fas fa-globe-americas"></i>
+                                        Live site
+                                    </a>
+
+                                    <a href="https://github.com/santu14/Weather-Dashboard" target="_blank" type="button"
+                                        class="btn btn-secondary">
+                                        <i class="far fa-eye"></i>
+                                        View source code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- -------------------------------------------------------------------------------------------- -->
+
+                </div>
+                <div class="card-deck justify-content-center">
+
+
+
+                <!-- -------------------------------------------------------------------------------------------- -->
+                <div class="card project2">
+                    <h5 class="modal-title text-center" id="staticBackdropLabel">
+                        Daily Planner
+                    </h5>
+                    <hr>
+
+                    <a href="#" data-toggle="modal" data-target="#ModalThree">
+                        <img class="project-img" src="Assets/Images/Daily-Planner.jpg" alt="Daily-Planner" />
+                    </a>
+
+                    <div class="modal fade " id="ModalThree" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-center" id="ModalLabel">
+                                        Daily Planner
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="Assets/Images/daily-planner-animated.gif" alt="Daily Planner" />
+                                    <hr>
+                                    <p>
+                                        This is application allows the user to save different tasks and events by the hour
+                                        of the day.
+                                    </p>
+
+                                </div>
+                                <div class="project-buttons">
+                                    <hr>
+
+                                    <a href="https://easyacres.github.io/TestingCenterLocator/" target="_blank"
+                                        type="button" class="btn btn-primary ">
+
+                                        <i class="fas fa-globe-americas"></i>
+                                        Live site
+                                    </a>
+
+                                    <a href="https://github.com/santu14/TestingCenterLocator" target="_blank" type="button"
+                                        class="btn btn-secondary">
+                                        <i class="far fa-eye"></i>
+                                        View source code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- -------------------------------------------------------------------------------------------- -->
+                <div class="card project2">
+                    <h5 class="modal-title text-center" id="staticBackdropLabel">
+                        Always Sunny trivia Quiz
+                    </h5>
+                    <hr>
+
+                    <a href="#" data-toggle="modal" data-target="#ModalFour">
+                        <img class="project-img" src="Assets/Images/Always Sunny Trivia.jpg" alt="Always Sunny Trivia" />
+                    </a>
+
+                    <div class="modal fade" id="ModalFour" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-center" id="ModalLabel">
+                                        Always Sunny trivia Quiz
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="Assets/Images/Always Sunny Trivia.gif" alt="Daily Planner" />
+                                    <hr>
+
+                                    <p>
+                                        Always Sunny in Philadelphia trivia game! this trivia game was created with
+                                        JavaScript, jQuery, HTML, and CSS using local storage to keep high scores.
+                                    </p>
+
+                                </div>
+
+                                <div class="project-buttons">
+                                    <hr>
+
+                                    <a href="https://santu14.github.io/Always-Sunny-Trivia-Quiz/" target="_blank"
+                                        type="button" class="btn btn-primary ">
+
+                                        <i class="fas fa-globe-americas"></i>
+                                        Live site
+                                    </a>
+
+                                    <a href="https://github.com/santu14/Always-Sunny-Trivia-Quiz" target="_blank"
+                                        type="button" class="btn btn-secondary">
+                                        <i class="far fa-eye"></i>
+                                        View source code
+                                    </a>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+
 
                     
                
             `);
-            }, 400)
+            }, 400);
             container.animate({ opacity: "1" });
-
         });
 
-
         $("#contact").on("click", () => {
-            event.preventDefault()
+            event.preventDefault();
             container.animate({ opacity: "0" });
 
-
             setTimeout(() => {
-                container.empty()
+                container.empty();
 
                 container.append(`
            
               
 
-            <div class="card justify-content-center" style="max-width: 1080px;">
+            <div class="card justify-content-center">
                 <div class="card-body">
                     <form>
                         <div class="form-group">
                             <h5 class="card-title">Contact</h5>
                             <hr>
                             <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Name</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                                <label for="FormControlTextarea1">Name</label>
+                                <textarea class="form-control" id="FormControlTextarea1" rows="1"></textarea>
                             </div>
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <label for="InputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
                         
                         </div>
                         
                         <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Message</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <label for="FormControlTextarea1">Message</label>
+                            <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
@@ -263,13 +430,10 @@
                     
                
             `);
-            }, 400)
+            }, 400);
             container.animate({ opacity: "1" });
-
         });
-
     </script>
-
 </body>
 
 </html>

@@ -1,11 +1,11 @@
-
+/* 
  .menu-text {   
     padding: 0px 40px 0px 40px;
-    /* margin-left: 60px; */
+    margin-left: 60px;
     background: rgb(0, 0, 0);
     color: rgb(14, 13, 13);
     font-size: 50px ;
-    /* font-family: 'Libre Barcode 39 Text', cursive;   */
+    font-family: 'Libre Barcode 39 Text', cursive;  
     
 
 }
@@ -39,4 +39,4 @@ a:active {
     margin-top: 20px;
    
 
-}
+} */

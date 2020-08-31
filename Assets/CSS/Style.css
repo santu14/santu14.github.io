@@ -1,35 +1,19 @@
 
 body {
     background-image: url(https://santu14.github.io/Assets/Images/cartographer.png);
-    background-color: rgb(177, 212, 252);
+    background-color: rgb(10, 3, 14);
     color: rgb(41, 39, 39);
     font-family: 'Fira Code', monospace;
 }
-
-/* body {
-    background: linear-gradient(-45deg, #af4747, #9651c4, #5c6dbb, #5ccfb6);
-    background-size: 400% 400%;
-    animation: gradient 5s ease infinite;
-} */
-
-/* @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+.accordion {
+    width: 500px;
+    margin: 20px;
+}
+.modal-dialog {
+    width: 90%;
 }
 
-#bkg-img {
-    width: 100%;
-    height: 1000px;
-    background-image: url(https://santu14.github.io/Assets/Images/cartographer.png);
 
-} */
 /* ----------------Navbar------------- */
 
 
@@ -81,26 +65,40 @@ body {
 #content {
     opacity: 0;
 }
-.container p{
-    font-size: 15px;
+.project-img {
+    width: 460px;
 }
-
 .card {
     background-color: rgb(241, 241, 241);
     padding: 17px;
     box-shadow: 6px 10px;
     justify-content: center;
-   
-
+    
+    
+    
+}
+.modal {
+    justify-content: center;
+    text-align: center;
 }
 
 .card-body {
     font-size: 10px; 
 }
+/* -----Portfolio area------ */
+.container p{
+    font-size: 15px;
+}
+.btn:link, .btn:visited {
+    color: rgb(255, 255, 255);
+}
 
-
-.projectImg{
-    padding: 10px;
+.project2 {
+    margin: 30px;
+    text-align: center;
+}
+.project-buttons {
+    margin-bottom: 20px;
 }
 section {
     position: relative;
