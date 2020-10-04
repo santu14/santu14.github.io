@@ -69,7 +69,7 @@ const container = $("#content");
                     </h5>
                     <hr>
                     <a href="#" data-toggle="modal" data-target="#ModalOne">
-                        <img class="project-img" src="Assets/Images/Contact-Tracker.png" alt="Client Contact Tracker" />
+                        <img class="project-img" src="Assets/Images/contact-tracker.png" alt="Client Contact Tracker" />
                     </a>
     
                     <div class="modal fade" id="ModalOne" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
