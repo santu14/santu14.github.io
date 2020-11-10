@@ -19,7 +19,7 @@
     }
 
     .divider {
-        opacity: 0.3 !important;
+        opacity: 0.3 ;
     }
 
     a:visited {
@@ -31,7 +31,7 @@
     }
 
     a:active {
-        color: rgb(255, 38, 0);
+        color: rgb(255, 38, 0) !important;
     }
 
     .typewriter h1 {
