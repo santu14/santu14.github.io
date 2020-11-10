@@ -5,7 +5,6 @@ import Testing from "../Images/testing-center-locator.gif";
 import TestingGif from "../Images/testing-center-animated.gif";
 import DailyPlanner from "../Images/daily-planner.jpg";
 import DailyPlannerGif from "../Images/daily-planner-animated.gif";
-
 import NoteTaker from "../Images/Note-Taker.png";
 import NoteTakerGif from "../Images/Note-Taker-Animated.gif";
 import Weather from "../Images/Weather-Dashboard.gif";
@@ -20,12 +19,11 @@ import CardDeck from "react-bootstrap/CardDeck";
 
 function Porfolio() {
   const [showOne, setShowOne] = useState(false);
-
   const [showTwo, setShowTwo] = useState(false);
-
   const [showThree, setShowThree] = useState(false);
-
   const [showFour, setShowFour] = useState(false);
+  const [showFive, setShowFive] = useState(false);
+  const [showSix, setShowSix] = useState(false);
 
   const handleCloseOne = () => setShowOne(false);
   const handleShowOne = () => setShowOne(true);
@@ -38,6 +36,12 @@ function Porfolio() {
 
   const handleCloseFour = () => setShowFour(false);
   const handleShowFour = () => setShowFour(true);
+
+  const handleCloseFive = () => setShowFive(false);
+  const handleShowFive = () => setShowFive(true);
+
+  const handleCloseSix = () => setShowSix(false);
+  const handleShowSix = () => setShowSix(true);
 
   return (
     <>
@@ -57,7 +61,7 @@ function Porfolio() {
 
           <Modal show={showOne} onHide={handleCloseOne} size="lg">
             <Modal.Header closeButton>
-              <Modal.Title>Testing center Locator</Modal.Title>
+              <Modal.Title>Client Contact Tracker</Modal.Title>
             </Modal.Header>
             <Modal.Body>
               <img src={ContactGif} alt="Client Contact Tracker" />
@@ -157,7 +161,7 @@ function Porfolio() {
       </CardDeck>
       {/* ---------------------------------------------------------------------------------------------------------------------------- */}
       <CardDeck className="justify-content-center">
-        <Card className="project">
+        <Card className="project2">
           <h5 className="modal-title text-center" id="staticBackdropLabel">
             Note Taker
           </h5>
@@ -168,7 +172,7 @@ function Porfolio() {
 
           <Modal show={showThree} onHide={handleCloseThree} size="lg">
             <Modal.Header closeButton>
-              <Modal.Title>Testing center Locator</Modal.Title>
+              <Modal.Title>Note Taker</Modal.Title>
             </Modal.Header>
             <Modal.Body>
               <img src={NoteTakerGif} alt="Note Taker" />
@@ -206,7 +210,7 @@ function Porfolio() {
             </Modal.Footer>
           </Modal>
         </Card>
-        <Card className="project">
+        <Card className="project2">
           <h5 className="modal-title text-center" id="staticBackdropLabel">
             Weather Dashboard
           </h5>
@@ -214,17 +218,17 @@ function Porfolio() {
           <a href="#" onClick={handleShowFour}>
             <img
               className="project-img"
-              src={Testing}
+              src={Weather}
               alt="Weather Dashboard"
             />
           </a>
 
           <Modal show={showFour} onHide={handleCloseFour} size="lg">
             <Modal.Header closeButton>
-              <Modal.Title>Testing center Locator</Modal.Title>
+              <Modal.Title>Weather Dashboard</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <img src={TestingGif} alt="Weather Dashboard" />
+              <img src={WeatherGif} alt="Weather Dashboard" />
               <hr></hr>
 
               <p>
@@ -238,22 +242,131 @@ function Porfolio() {
               <hr></hr>
               <div className="project-buttons">
                 <a
-                  href="https://easyacres.github.io/TestingCenterLocator/"
+                  href="https://santu14.github.io/Weather-Dashboard/"
                   target="_blank"
                   type="button"
-                  className="btn btn-primary "
+                  class="btn btn-primary "
                 >
-                  <i className="fas fa-globe-americas"></i>
+                  <i class="fas fa-globe-americas"></i>
                   Live site
                 </a>
 
                 <a
-                  href="https://github.com/santu14/TestingCenterLocator"
+                  href="https://github.com/santu14/Weather-Dashboard"
                   target="_blank"
                   type="button"
-                  className="btn btn-secondary"
+                  class="btn btn-secondary"
                 >
-                  <i className="far fa-eye"></i>
+                  <i class="far fa-eye"></i>
+                  View source code
+                </a>
+              </div>
+            </Modal.Footer>
+          </Modal>
+        </Card>
+      </CardDeck>
+
+      {/* ---------------------------------------------------------------------------------------------------------------------------- */}
+      <CardDeck className="justify-content-center">
+        <Card className="project2">
+          <h5 className="modal-title text-center" id="staticBackdropLabel">
+            Daily Planner
+          </h5>
+          <hr></hr>
+          <a onClick={handleShowFive}>
+            <img
+              className="project-img"
+              src={DailyPlanner}
+              alt="Daily Planner"
+            />
+          </a>
+
+          <Modal show={showFive} onHide={handleCloseFive} size="lg">
+            <Modal.Header closeButton>
+              <Modal.Title>Daily Planner</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <img src={DailyPlannerGif} alt="Daily Planner" />
+              <hr></hr>
+
+              <p>
+                This is application allows the user to save different tasks and
+                events by the hour of the day.
+              </p>
+            </Modal.Body>
+            <Modal.Footer>
+              <hr></hr>
+              <div className="project-buttons">
+                <a
+                  href="https://santu14.github.io/Daily-Planner-App/"
+                  target="_blank"
+                  type="button"
+                  class="btn btn-primary "
+                >
+                  <i class="fas fa-globe-americas"></i>
+                  Live site
+                </a>
+
+                <a
+                  href="https://github.com/santu14/Daily-Planner-App"
+                  target="_blank"
+                  type="button"
+                  class="btn btn-secondary"
+                >
+                  <i class="far fa-eye"></i>
+                  View source code
+                </a>
+              </div>
+            </Modal.Footer>
+          </Modal>
+        </Card>
+        <Card className="project2">
+          <h5 className="modal-title text-center" id="staticBackdropLabel">
+            Always Sunny Trivia
+          </h5>
+          <hr></hr>
+          <a href="#" onClick={handleShowSix}>
+            <img
+              className="project-img"
+              src={Quiz}
+              alt="Always Sunny Trivia"
+            />
+          </a>
+
+          <Modal show={showSix} onHide={handleCloseSix} size="lg">
+            <Modal.Header closeButton>
+              <Modal.Title>Always Sunny Trivia</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <img src={QuizGif} alt="Always Sunny Trivia" />
+              <hr></hr>
+
+              <p>
+                Always Sunny in Philadelphia trivia game! this trivia game was
+                created with JavaScript, jQuery, HTML, and CSS using local
+                storage to keep high scores.
+              </p>
+            </Modal.Body>
+            <Modal.Footer>
+              <hr></hr>
+              <div className="project-buttons">
+                <a
+                  href="https://santu14.github.io/Always-Sunny-Trivia-Quiz/"
+                  target="_blank"
+                  type="button"
+                  class="btn btn-primary "
+                >
+                  <i class="fas fa-globe-americas"></i>
+                  Live site
+                </a>
+
+                <a
+                  href="https://github.com/santu14/Always-Sunny-Trivia-Quiz"
+                  target="_blank"
+                  type="button"
+                  class="btn btn-secondary"
+                >
+                  <i class="far fa-eye"></i>
                   View source code
                 </a>
               </div>
