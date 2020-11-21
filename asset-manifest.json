@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9af66477.chunk.css",
+    "main.js": "/static/js/main.49c76efd.chunk.js",
+    "main.js.map": "/static/js/main.49c76efd.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.291a5225.js",
+    "runtime-main.js.map": "/static/js/runtime-main.291a5225.js.map",
+    "static/css/2.20aa2d7b.chunk.css": "/static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.b88b41ca.chunk.js": "/static/js/2.b88b41ca.chunk.js",
+    "static/js/2.b88b41ca.chunk.js.map": "/static/js/2.b88b41ca.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.20aa2d7b.chunk.css.map": "/static/css/2.20aa2d7b.chunk.css.map",
+    "static/css/main.9af66477.chunk.css.map": "/static/css/main.9af66477.chunk.css.map",
+    "static/js/2.b88b41ca.chunk.js.LICENSE.txt": "/static/js/2.b88b41ca.chunk.js.LICENSE.txt",
+    "static/media/Always Sunny Trivia.2a891c19.jpg": "/static/media/Always Sunny Trivia.2a891c19.jpg",
+    "static/media/Always Sunny Trivia.4b41460d.gif": "/static/media/Always Sunny Trivia.4b41460d.gif",
+    "static/media/Note-Taker-Animated.241efd5d.gif": "/static/media/Note-Taker-Animated.241efd5d.gif",
+    "static/media/Note-Taker.554835b4.png": "/static/media/Note-Taker.554835b4.png",
+    "static/media/Selfie.06d36e1d.jpg": "/static/media/Selfie.06d36e1d.jpg",
+    "static/media/Weather-Dashboard.c92db4be.gif": "/static/media/Weather-Dashboard.c92db4be.gif",
+    "static/media/Weather-dashboard-animated.26d4c7c9.gif": "/static/media/Weather-dashboard-animated.26d4c7c9.gif",
+    "static/media/contact-tracker.feec972f.png": "/static/media/contact-tracker.feec972f.png",
+    "static/media/content-tracker.9fcd1fb7.gif": "/static/media/content-tracker.9fcd1fb7.gif",
+    "static/media/daily-planner-animated.4956799f.gif": "/static/media/daily-planner-animated.4956799f.gif",
+    "static/media/daily-planner.a03cc537.jpg": "/static/media/daily-planner.a03cc537.jpg",
+    "static/media/testing-center-animated.b12b9cc5.gif": "/static/media/testing-center-animated.b12b9cc5.gif",
+    "static/media/testing-center-locator.a6c29600.gif": "/static/media/testing-center-locator.a6c29600.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.291a5225.js",
+    "static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.b88b41ca.chunk.js",
+    "static/css/main.9af66477.chunk.css",
+    "static/js/main.49c76efd.chunk.js"
+  ]
+}
