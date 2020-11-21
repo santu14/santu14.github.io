@@ -1,0 +1,63 @@
+.header-card{
+    margin-bottom: 60px;
+}
+
+    /* ----------------Navbar Links------------- */
+
+    .nav-link {    
+        color: rgb(14, 14, 14);
+    }
+    .nav-link .active {
+        color: whitesmoke;
+    }
+   
+
+    ul {
+        margin: 0px;
+        padding: 0px 20px 0px 20px;
+    
+    }
+
+    .divider {
+        opacity: 0.3 ;
+    }
+
+    a:visited {
+        color: rgb(173, 171, 171);
+    }
+
+    a:hover {
+        color: rgb(196, 75, 54) !important;
+    }
+
+    a:active {
+        color: rgb(255, 38, 0) !important;
+    }
+
+    .typewriter h1 {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        text-align: center;
+        border-right: .15em solid rgb(0, 0, 0); /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing 3.5s steps(50, end),
+          blink-caret .75s step-end infinite;
+      }
+      .typewriter {
+        margin: 60px auto 30px auto ;
+        width: fit-content;
+    }
+      
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 43ch }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: rgb(37, 36, 36); }
+      }
