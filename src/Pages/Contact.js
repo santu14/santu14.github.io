@@ -1,10 +1,13 @@
 import React from 'react'
 import Selfie from '../Images/Selfie.jpg'
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+
 function Contact() {
     return (
        
-        <div className="card justify-content-center">
-                <div className="card-body">
+        <Card className="justify-content-center">
+                <Card.Body>
                     <form>
                         <div className="form-group">
                             <h5 className="card-title">Contact</h5>
@@ -22,10 +25,10 @@ function Contact() {
                             <label for="FormControlTextarea1">Message</label>
                             <textarea className="form-control" id="FormControlTextarea1" rows="3"></textarea>
                         </div>
-                        <button type="submit" className="btn btn-primary">Submit</button>
+                        <Button type="submit" className="btn-primary">Submit</Button>
                     </form>
-                </div>
-            </div>
+                </Card.Body>
+            </Card>
         
 
     );

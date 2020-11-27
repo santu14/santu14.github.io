@@ -326,11 +326,7 @@ function Porfolio() {
           </h5>
           <hr></hr>
           <a href="#" onClick={handleShowSix}>
-            <img
-              className="project-img"
-              src={Quiz}
-              alt="Always Sunny Trivia"
-            />
+            <img className="project-img" src={Quiz} alt="Always Sunny Trivia" />
           </a>
 
           <Modal show={showSix} onHide={handleCloseSix} size="lg">
