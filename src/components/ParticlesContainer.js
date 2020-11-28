@@ -5,6 +5,7 @@ function ParticlesContainer() {
     return (
         <div>
             <Particles
+            className="particles"
           height={900}
           params={{
             particles: {
