@@ -8,11 +8,26 @@ import Contact from "./Pages/Contact";
 import ParticlesContainer from "./components/ParticlesContainer";
 
 function App() {
- 
+  const [page, setPage] = useState("reg")
+
+  const onPortClickHandler = () => {
+    setPage("port")
+  }
+  const onElseClickHandler = () => {
+    setPage("reg")
+  }
+
+  const particleSizeChanger = () =>{
+    if(page === "reg"){
+      return 900
+    } else if(page === "port"){
+      return 2000
+    }
+  }
   return (
     <Router>
       <div>
-        <ParticlesContainer/>
+        <ParticlesContainer size={particleSizeChanger}/>
         <div
           style={{
             position: "absolute",
@@ -23,7 +38,7 @@ function App() {
           }}
         >
           <Container>
-            <Header />
+            <Header portClick={onPortClickHandler} elseClick={onElseClickHandler}/>
             <Switch>
               <Route exact path="/">
                 <About />

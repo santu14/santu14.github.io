@@ -5,20 +5,20 @@ function ParticlesContainer() {
     return (
         <div>
             <Particles
-          height="auto"
+          height={900}
           params={{
             particles: {
               number: {
-                value: 160,
+                value: 400,
                 density: {
                   enable: false,
                 },
               },
               size: {
-                value: 3,
+                value: 1,
                 random: true,
                 anim: {
-                  speed: 4,
+                  speed: 1,
                   size_min: 0.3,
                 },
               },
@@ -27,7 +27,7 @@ function ParticlesContainer() {
               },
               move: {
                 random: true,
-                speed: 1,
+                speed: .5,
                 direction: "top",
                 out_mode: "out",
               },

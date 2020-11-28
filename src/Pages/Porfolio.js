@@ -64,7 +64,7 @@ function Porfolio() {
               <Modal.Title>Client Contact Tracker</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <img src={ContactGif} alt="Client Contact Tracker" />
+              <img className="project-gif" src={ContactGif} alt="Client Contact Tracker" />
               <hr></hr>
 
               <p>
@@ -122,7 +122,7 @@ function Porfolio() {
               <Modal.Title>Testing center Locator</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <img src={TestingGif} alt="Testing-Center-Locator" />
+              <img className="project-gif" src={TestingGif} alt="Testing-Center-Locator" />
               <hr></hr>
 
               <p>
@@ -175,7 +175,7 @@ function Porfolio() {
               <Modal.Title>Note Taker</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <img src={NoteTakerGif} alt="Note Taker" />
+              <img className="project-gif" src={NoteTakerGif} alt="Note Taker" />
               <hr></hr>
 
               <p>
@@ -228,7 +228,7 @@ function Porfolio() {
               <Modal.Title>Weather Dashboard</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <img src={WeatherGif} alt="Weather Dashboard" />
+              <img className="project-gif" src={WeatherGif} alt="Weather Dashboard" />
               <hr></hr>
 
               <p>
@@ -286,7 +286,7 @@ function Porfolio() {
               <Modal.Title>Daily Planner</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <img src={DailyPlannerGif} alt="Daily Planner" />
+              <img className="project-gif" src={DailyPlannerGif} alt="Daily Planner" />
               <hr></hr>
 
               <p>
@@ -334,7 +334,7 @@ function Porfolio() {
               <Modal.Title>Always Sunny Trivia</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <img src={QuizGif} alt="Always Sunny Trivia" />
+              <img className="project-gif" src={QuizGif} alt="Always Sunny Trivia" />
               <hr></hr>
 
               <p>

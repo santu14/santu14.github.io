@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function Header(props) {
   return (
@@ -17,7 +17,6 @@ function Header(props) {
                 onClick={() => {
                   history.push("/about");
                 }}
-                href={props.link}
               >
                 About
               </a>
@@ -25,7 +24,7 @@ function Header(props) {
           )}
         />
 
-         <li className="nav-item">
+        <li className="nav-item">
           <h1 className="divider">|</h1>
         </li>
 
@@ -37,14 +36,12 @@ function Header(props) {
                 onClick={() => {
                   history.push("/portfolio");
                 }}
-                href={props.link}
               >
                 Portfolio
               </a>
             </li>
           )}
         />
-        
 
         <li className="nav-item">
           <h1 className="divider">|</h1>
@@ -58,7 +55,6 @@ function Header(props) {
                 onClick={() => {
                   history.push("/contact");
                 }}
-                href={props.link}
               >
                 Contact
               </a>
