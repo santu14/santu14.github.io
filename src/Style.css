@@ -87,7 +87,7 @@ li > a:hover {
   text-align: center;
 }
 .project {
-  margin: 30px;
+ 
   text-align: center;
 }
 .project-buttons {
@@ -112,6 +112,7 @@ section h3 {
 
 .particles {
   position: fixed;
+  width: 100%;
 }
 /* ----------------Media Query's------------- */
 @media screen and (max-width: 1199px) {
