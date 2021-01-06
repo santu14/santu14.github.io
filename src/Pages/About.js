@@ -42,10 +42,10 @@ function About() {
 
               <div className="text-center">
                 <a href="https://www.linkedin.com/in/santiago-solana-5a615b5b/"  target="_blank">
-                  <img className="link-img" src={Linkedin} alt="linkedin" width="50" height="auto" />
+                  <img className="link-img" src={Linkedin} alt="linkedin" height="auto" />
                 </a>
                 <a href="https://github.com/santu14" target="_blank">
-                  <img className="link-img" src={Github} alt="Github" width="50" height="auto" />
+                  <img className="link-img" src={Github} alt="Github" height="auto" />
                 </a>
               </div>
             </div>
