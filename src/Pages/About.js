@@ -1,15 +1,18 @@
 import React from "react";
 import Selfie from "../Images/Selfie.jpg";
 import Linkedin from "../Images/linkedin-logo.png";
+import Card from "react-bootstrap/Card";
 import Github from "../Images/github-sign.png";
 
 function About() {
   return (
     <div>
-      <div className="card justify-content-center">
+      <Card className="justify-content-center">
         <div className="row no-gutters">
           <div className="col-md-12">
-            <h4 className="card-title">About Me</h4>
+            <Card.Title>
+              <h4 className="card-title">About Me</h4>
+            </Card.Title>
             <hr />
           </div>
         </div>
@@ -26,8 +29,8 @@ function About() {
           </div>
 
           <div className="col-md-7">
-            <div className="card-body">
-              <p className="card-text">
+            <Card.Body>
+              <p>
                 Web developer educated in Georgia Tech’s Full-Stack Development
                 Bootcamp, becoming proficient in technologies like JavaScript,
                 jQuery, CSS, Node.js, MySQL, MongoDB, and React. With a strong
@@ -41,17 +44,35 @@ function About() {
               </p>
 
               <div className="text-center">
-                <a href="https://www.linkedin.com/in/santiago-solana-5a615b5b/"  target="_blank">
-                  <img className="link-img" src={Linkedin} alt="linkedin" height="auto" />
+                <a
+                  href="https://www.linkedin.com/in/santiago-solana-5a615b5b/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    className="link-img"
+                    src={Linkedin}
+                    alt="linkedin"
+                    height="auto"
+                  />
                 </a>
-                <a href="https://github.com/santu14" target="_blank">
-                  <img className="link-img" src={Github} alt="Github" height="auto" />
+                <a
+                  href="https://github.com/santu14"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    className="link-img"
+                    src={Github}
+                    alt="Github"
+                    height="auto"
+                  />
                 </a>
               </div>
-            </div>
+            </Card.Body>
           </div>
         </div>
-      </div>
+      </Card>
     </div>
   );
 }
