@@ -45,7 +45,7 @@ function About(props) {
       exit="out"
       variants={variants}
     >
-      <div style={{ padding: "0px 0px 150px 0px" }}>
+      <div>
         <Card className="justify-content-center">
           <div className="row no-gutters">
             <div className="col-md-12">

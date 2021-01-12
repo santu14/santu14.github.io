@@ -21,7 +21,7 @@ function Contact() {
   };
   return (
     <motion.div initial="hidden" animate="in" exit="out" variants={variants}>
-      <div style={{ padding: "0px 0px 200px 0px" }}>
+      <div >
         <Card className="justify-content-center">
           <Card.Body>
             <form>
