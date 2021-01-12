@@ -16,10 +16,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import ParticlesContainer from "./components/ParticlesContainer";
 import "./Style.css";
 function App() {
-  // const location = useLocation();
-  // console.log(location.pathname);
+  
+  const location = useLocation();
+  
   return (
-    <Router>
+    
       <div>
         <ParticlesContainer />
         <div
@@ -34,38 +35,29 @@ function App() {
           <Container>
             <Header />
 
-            <motion.div initial="hidden" animate="visible" variants={{
-              hidden: {
-                opacity:0
-              },
-              visible: {
-                opacity: 1,
-                transition: {
-                  delay: 3.5
-                }
+            {/* <Portfolio />
 
-              },
-            }}> 
-            
-              <About />
-            </motion.div>
-            
-           
-              <Portfolio />
-         
-              <Contact />
-        
+            <Contact /> */}
 
-            {/* <Switch >
-              <Route exact path="/" component={About} />
-              <Route exact path="/about" component={About} />
-              <Route exact path="/portfolio" component={Portfolio} />
-              <Route exact path="/contact" component={Contact} />
-            </Switch> */}
+            <AnimatePresence exitBeforeEnter>
+              <Switch location={location} key={location.pathname}>
+                
+                  <Route exact path="/" component={About} />
+                
+                
+                  <Route exact path="/about" component={About} />
+               
+                
+                  <Route exact path="/portfolio" component={Portfolio} />
+               
+                  <Route exact path="/contact" component={Contact} />
+                
+              </Switch>
+            </AnimatePresence>
           </Container>
         </div>
       </div>
-    </Router>
+    
   );
 }
 
