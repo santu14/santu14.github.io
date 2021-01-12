@@ -4,7 +4,14 @@ import Container from "react-bootstrap/Container";
 import About from "./Pages/About";
 import Portfolio from "./Pages/Porfolio";
 import Contact from "./Pages/Contact";
-import { BrowserRouter as Router, Route, Switch, useLocation } from "react-router-dom";
+import "animate.css/animate.min.css";
+import ScrollAnimation from "react-animate-on-scroll";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  useLocation,
+} from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import ParticlesContainer from "./components/ParticlesContainer";
 import "./Style.css";
@@ -26,12 +33,35 @@ function App() {
         >
           <Container>
             <Header />
-            <Switch >
+
+            <motion.div initial="hidden" animate="visible" variants={{
+              hidden: {
+                opacity:0
+              },
+              visible: {
+                opacity: 1,
+                transition: {
+                  delay: 3.5
+                }
+
+              },
+            }}> 
+            
+              <About />
+            </motion.div>
+            
+           
+              <Portfolio />
+         
+              <Contact />
+        
+
+            {/* <Switch >
               <Route exact path="/" component={About} />
               <Route exact path="/about" component={About} />
               <Route exact path="/portfolio" component={Portfolio} />
               <Route exact path="/contact" component={Contact} />
-            </Switch>
+            </Switch> */}
           </Container>
         </div>
       </div>

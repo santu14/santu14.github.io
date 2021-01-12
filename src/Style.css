@@ -13,7 +13,8 @@ body {
 }
 
 .link-img {
-  padding: 20px 10px 0px 10px;
+  /* margin: 20px auto 0px auto; */
+ 
   
   width: 80px;
   
@@ -78,6 +79,9 @@ li > a:hover {
 
 .card-body {
   font-size: 10px !important;
+}
+.resize {
+  border-radius: 15px;
 }
 /* -----Portfolio area------ */
 .container p {

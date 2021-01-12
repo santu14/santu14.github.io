@@ -45,7 +45,7 @@ function Porfolio() {
   const handleShowSix = () => setShowSix(true);
 
   return (
-    <>
+    <div style={{ padding: "0px 0px 200px 0px" }}>
       <CardDeck className="justify-content-center">
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
           <Card className="project">
@@ -413,7 +413,7 @@ function Porfolio() {
           </Card>
         </motion.div>
       </CardDeck>
-    </>
+    </div>
   );
 }
 
