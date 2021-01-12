@@ -13,10 +13,10 @@ body {
 }
 
 .link-img {
-  /* margin: 20px auto 0px auto; */
+  margin: 20px 30px 0px 80px;
  
   
-  width: 80px;
+  width: 60px;
   
 }
 /* ----------------Navbar------------- */
@@ -81,7 +81,8 @@ li > a:hover {
   font-size: 10px !important;
 }
 .resize {
-  border-radius: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 /* -----Portfolio area------ */
 .container p {
@@ -93,10 +94,12 @@ li > a:hover {
 }
 
 .project2 {
-  margin: 30px;
+  margin: 30px 10px 30px 10px;
   text-align: center;
 }
+
 .project {
+  margin: 0px 10px 30px 10px;
  
   text-align: center;
 }
@@ -129,14 +132,18 @@ section h3 {
   .typewriter h1 {
     font-size: 2em;
   }
+ 
   .project-img {
     width: 400px;
   }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 989px) {
   .typewriter h1 {
     font-size: 1.5em;
+  }
+  .varient {
+    margin-top: 30px
   }
   .project-img {
     width: 300px;
@@ -199,6 +206,9 @@ section h3 {
   .header-card {
     padding: 0;
   }
+  .varient {
+    margin-top: 30px
+  }
   .navbar {
     font-size: 12px;
   }
@@ -209,8 +219,8 @@ section h3 {
   }
   ul {
     font-size: small;
-    margin-left: 29.5%;
-    margin-right: 29%x;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center !important;
   }
   .divider {
@@ -242,6 +252,9 @@ section h3 {
   .typewriter h1 {
     font-size: 0.7em;
   }
+  .varient {
+    margin-top: 30px
+  }
   .modal-title {
     font-size: small;
   }
@@ -264,6 +277,13 @@ section h3 {
   }
   .container p {
     font-size: 10px;
+  }
+  .link-img {
+    /* margin: 20px auto 0px auto; */
+   
+    
+    width: 50px;
+    
   }
 }
 

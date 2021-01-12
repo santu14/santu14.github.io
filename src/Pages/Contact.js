@@ -15,13 +15,13 @@ function Contact() {
       in: {
         opacity: 1,
         transition: {
-          delay: .4
+          delay: .2
         },
       },
   };
   return (
     <motion.div initial="hidden" animate="in" exit="out" variants={variants}>
-      <div >
+      <div style={{ padding: "0px 0px 200px 0px" }} >
         <Card className="justify-content-center">
           <Card.Body>
             <form>

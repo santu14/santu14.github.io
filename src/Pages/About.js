@@ -3,6 +3,8 @@ import Selfie from "../Images/Selfie.jpg";
 import Linkedin from "../Images/linkedin-logo.png";
 import Card from "react-bootstrap/Card";
 import Github from "../Images/github-sign.png";
+import Download from "../Images/download.png";
+
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 
@@ -24,7 +26,7 @@ function About(props) {
     in: {
       opacity: 1,
       transition: {
-        delay: .4
+        delay: .2
       },
     },
   };
@@ -45,7 +47,7 @@ function About(props) {
       exit="out"
       variants={variants}
     >
-      <div>
+      <div style={{ padding: "0px 0px 200px 0px" }}>
         <Card className="justify-content-center">
           <div className="row no-gutters">
             <div className="col-md-12">
@@ -86,7 +88,7 @@ function About(props) {
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.9 }}
-                    className="col-md-6 col-sm-6 text-right"
+                    // className="col-md-4 col-sm-4 col-xs-4 text-right"
                   >
                     <a
                       href="https://www.linkedin.com/in/santiago-solana-5a615b5b/"
@@ -104,7 +106,7 @@ function About(props) {
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.9 }}
-                    className="col-md-6 col-sm-6"
+                    // className="col-md-4 col-sm-4 text-center"
                   >
                     <a
                       href="https://github.com/santu14"
@@ -114,6 +116,24 @@ function About(props) {
                       <img
                         className="link-img"
                         src={Github}
+                        alt="Github"
+                        height="auto"
+                      />
+                    </a>
+                  </motion.div>
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.9 }}
+                    // className="col-md-4 col-sm-4 col-xs-4"
+                  >
+                    <a
+                      href="https://github.com/santu14"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        className="link-img"
+                        src={Download}
                         alt="Github"
                         height="auto"
                       />
