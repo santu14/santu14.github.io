@@ -4,6 +4,8 @@ import Linkedin from "../Images/linkedin-logo.png";
 import Card from "react-bootstrap/Card";
 import Github from "../Images/github-sign.png";
 import Download from "../Images/download.png";
+import Resume from "../Images/Santiago-Solana-Resume-2021.pdf";
+
 
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
@@ -109,7 +111,7 @@ function About(props) {
                     // className="col-md-4 col-sm-4 text-center"
                   >
                     <a
-                      href="https://github.com/santu14"
+                      href={"https://github.com/santu14"}
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -127,14 +129,15 @@ function About(props) {
                     // className="col-md-4 col-sm-4 col-xs-4"
                   >
                     <a
-                      href="https://github.com/santu14"
+                        href={Resume}
+                        download
                       target="_blank"
                       rel="noreferrer"
                     >
                       <img
                         className="link-img"
                         src={Download}
-                        alt="Github"
+                        alt="Resume"
                         height="auto"
                       />
                     </a>
