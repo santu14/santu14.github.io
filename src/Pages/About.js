@@ -1,11 +1,10 @@
-import React ,{ useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Selfie from "../Images/Selfie.jpg";
 import Linkedin from "../Images/linkedin-logo.png";
 import Card from "react-bootstrap/Card";
 import Github from "../Images/github-sign.png";
 import Download from "../Images/download.png";
 import Resume from "../Images/Santiago-Solana-Resume-2021.pdf";
-
 
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
@@ -23,24 +22,23 @@ function About(props) {
     },
     out: {
       opacity: 0,
-      
     },
     in: {
       opacity: 1,
       transition: {
-        delay: .2
+        delay: 0.2,
       },
     },
   };
- const [animState, setAnimState] = useState("visible")
- const location = useLocation();
+  const [animState, setAnimState] = useState("visible");
+  const location = useLocation();
   useEffect(() => {
-    if(location.pathname === "/"){
-      setAnimState("visible")
+    if (location.pathname === "/") {
+      setAnimState("visible");
     } else {
-      setAnimState("in")
+      setAnimState("in");
     }
-  }, [location])
+  }, [location]);
 
   return (
     <motion.div
@@ -128,12 +126,7 @@ function About(props) {
                     whileTap={{ scale: 0.9 }}
                     // className="col-md-4 col-sm-4 col-xs-4"
                   >
-                    <a
-                        href={Resume}
-                        download
-                      target="_blank"
-                      rel="noreferrer"
-                    >
+                    <a href={Resume} download target="_blank" rel="noreferrer">
                       <img
                         className="link-img"
                         src={Download}

@@ -143,7 +143,7 @@ function Porfolio() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
+            transition={{ delay: 0.8 }}
           >
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
               <Card className="project varient">
@@ -215,7 +215,7 @@ function Porfolio() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.6 }}
+            transition={{ delay: 1.2 }}
           >
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
               <Card className="project2">
@@ -284,7 +284,7 @@ function Porfolio() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.7 }}
+            transition={{ delay: 1.6 }}
           >
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
               <Card className="project2">
@@ -357,7 +357,7 @@ function Porfolio() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.8 }}
+            transition={{ delay: 2 }}
           >
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
               <Card className="project2">
@@ -424,7 +424,7 @@ function Porfolio() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.9 }}
+            transition={{ delay: 2.4 }}
           >
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
               <Card className="project2">

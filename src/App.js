@@ -4,8 +4,7 @@ import Container from "react-bootstrap/Container";
 import About from "./Pages/About";
 import Portfolio from "./Pages/Porfolio";
 import Contact from "./Pages/Contact";
-import "animate.css/animate.min.css";
-import ScrollAnimation from "react-animate-on-scroll";
+
 import {
   BrowserRouter as Router,
   Route,

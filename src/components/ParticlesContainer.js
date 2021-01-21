@@ -16,7 +16,7 @@ function ParticlesContainer() {
               },
             },
             size: {
-              value: 1,
+              value: 2,
               random: true,
               anim: {
                 speed: 1,
