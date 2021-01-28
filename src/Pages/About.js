@@ -72,16 +72,15 @@ function About(props) {
             <div className="col-md-7">
               <Card.Body>
                 <p>
-                  Web developer educated in Georgia Tech’s Full-Stack
-                  Development Bootcamp, becoming proficient in technologies like
-                  JavaScript, jQuery, CSS, Node.js, MySQL, MongoDB, and React.
-                  With a strong background in Audio engineering design and
-                  Customer support, you could say I have a passion for learning
-                  new technologies and have developed excellent problem solving,
-                  research, teamwork, and communication skills over the years.
-                  The key factors that drive my decisions when approaching a new
-                  project are creativity, responsiveness, and functionality. I
-                  am dedicated to creating robust interactive user experiences.
+                  Full-Stack web developer and recent graduate from Georgia
+                  Tech’s Full-Stack Flex Web Development Bootcamp. Proficient in
+                  technologies like JavaScript, jQuery, CSS, MongoDB, MySQL,
+                  React.js, and Node.js, with a passion for combining creativity
+                  and technology to create robust and interactive applications.
+                  I love learning new technologies and with my extensive
+                  customer support experience have developed excellent problem
+                  solving, research, teamwork, and communication skills over the
+                  years.
                 </p>
 
                 <div className="row  ">
