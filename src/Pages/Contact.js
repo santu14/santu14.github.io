@@ -1,63 +1,50 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Selfie from "../Images/Selfie.jpg";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { AnimatePresence, motion } from "framer-motion";
+import Form from "react-bootstrap/Form";
 function Contact() {
   const variants = {
     hidden: {
       opacity: 0,
     },
     out: {
-        opacity: 0,
-       
+      opacity: 0,
+    },
+    in: {
+      opacity: 1,
+      transition: {
+        delay: 0.2,
       },
-      in: {
-        opacity: 1,
-        transition: {
-          delay: .2
-        },
-      },
+    },
   };
   return (
     <motion.div initial="hidden" animate="in" exit="out" variants={variants}>
-      <div style={{ padding: "0px 0px 200px 0px" }} >
+      <div style={{ padding: "0px 0px 200px 0px" }}>
         <Card className="justify-content-center">
           <Card.Body>
-            <form>
-              <div className="form-group">
-                {" "}
-                <h5 className="card-title">Contact</h5>
+            <Form>
+              <Form.Group>
+                <Card.Title>Contact</Card.Title>
                 <hr></hr>
-                <div className="form-group">
-                  <label for="FormControlTextarea1">Name</label>
-                  <textarea
-                    className="form-control"
-                    id="FormControlTextarea1"
-                    rows="1"
-                  ></textarea>
-                </div>
-                <label for="InputEmail1">Email address</label>
-                <input
-                  type="email"
-                  className="form-control"
-                  id="InputEmail1"
-                  aria-describedby="emailHelp"
-                ></input>
-              </div>
-
-              <div className="form-group">
-                <label for="FormControlTextarea1">Message</label>
-                <textarea
-                  className="form-control"
-                  id="FormControlTextarea1"
-                  rows="3"
-                ></textarea>
-              </div>
+                <Form.Group controlId="formBasicName">
+                  <Form.Label>Name</Form.Label>
+                  <Form.Control type="name" />
+                </Form.Group>
+                <Form.Group controlId="formBasicEmail">
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control type="Email" />
+                </Form.Group>
+                <Form.Group controlId="ControlTextarea1">
+                  <Form.Label>Message</Form.Label>
+                  <Form.Control as="textarea" rows={3} />
+                </Form.Group>
+              </Form.Group>
               <Button type="submit" className="btn-primary">
                 Submit
               </Button>
-            </form>
+            </Form>
           </Card.Body>
         </Card>
       </div>
