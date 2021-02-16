@@ -4,7 +4,7 @@ import Linkedin from "../Images/linkedin-logo.png";
 import Card from "react-bootstrap/Card";
 import Github from "../Images/github-sign.png";
 import Download from "../Images/download.png";
-import Resume from "../Images/Santiago-Solana-Resume-2021.pdf";
+import Resume from "../Images/Santiago-Solana-Resume-2021.docx";
 
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
@@ -73,10 +73,10 @@ function About(props) {
               <Card.Body>
                 <p>
                   Full-Stack web developer and recent graduate from Georgia
-                  Tech’s Full-Stack Flex Web Development Bootcamp. Proficient in
+                  Tech’s Full-Stack Flex Web Development Program. Proficient in
                   technologies like JavaScript, jQuery, CSS, MongoDB, MySQL,
-                  React.js, and Node.js, with a passion for combining creativity
-                  and technology to create robust and interactive applications.
+                  React.js, and Node.js. Whenever I approach a new projects my goal is to combine creativity
+                  and technology, to create robust and interactive applications.
                   I love learning new technologies and with my extensive
                   customer support experience have developed excellent problem
                   solving, research, teamwork, and communication skills over the
