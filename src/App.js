@@ -12,24 +12,15 @@ import {
   useLocation,
 } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import ParticlesContainer from "./components/ParticlesContainer";
 import "./Style.css";
 function App() {
   
   const location = useLocation();
   
   return (
-    
-      <div>
-        <ParticlesContainer />
+  
         <div
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-          }}
+          
         >
           <Container>
             <Header />
@@ -55,7 +46,7 @@ function App() {
             </AnimatePresence>
           </Container>
         </div>
-      </div>
+     
     
   );
 }

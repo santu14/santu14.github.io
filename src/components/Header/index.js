@@ -14,7 +14,8 @@ function Header(props) {
             <li className="nav-item">
               <a
                 className="nav-link about"
-                onClick={() => {
+                onClick={(e) => {
+                  e.preventDefault()
                   history.push("/about");
                 }}
               >
@@ -33,7 +34,9 @@ function Header(props) {
             <li className="nav-item">
               <a
                 className="nav-link about"
-                onClick={() => {
+                onClick={(e) => {
+                  e.preventDefault()
+
                   history.push("/portfolio");
                 }}
               >
@@ -52,7 +55,9 @@ function Header(props) {
             <li className="nav-item">
               <a
                 className="nav-link about"
-                onClick={() => {
+                onClick={(e) => {
+                  e.preventDefault()
+
                   history.push("/contact");
                 }}
               >

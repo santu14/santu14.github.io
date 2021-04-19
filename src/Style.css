@@ -1,8 +1,9 @@
 body {
-  background-image: url(https://santu14.github.io/Assets/Images/cartographer.png);
+ 
   background-color: rgb(10, 3, 14) !important;
   color: rgb(41, 39, 39) !important;
   font-family: "Fira Code", monospace !important;
+  
 }
 .accordion {
   width: 500px;
