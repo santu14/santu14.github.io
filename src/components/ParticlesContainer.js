@@ -57,7 +57,7 @@ function ParticlesContainer() {
             },
             move: {
               random: true,
-              speed: 0.3,
+              speed: 0.5,
               direction: "",
               out_mode: "out",
             },
@@ -77,7 +77,7 @@ function ParticlesContainer() {
               },
               onclick: {
                 enable: true,
-                mode: "repulse",
+                mode: "push",
               },
             },
             modes: {

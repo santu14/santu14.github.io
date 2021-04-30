@@ -13,6 +13,7 @@ import {
 } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import "./Style.css";
+import { NewHeader } from "./components/NewHeader";
 function App() {
   
   const location = useLocation();
@@ -24,7 +25,8 @@ function App() {
         >
           <Container>
             <Header />
-
+            
+            {/* <NewHeader/> */}
             {/* <Portfolio />
 
             <Contact /> */}

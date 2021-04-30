@@ -4,7 +4,7 @@ import Linkedin from "../Images/linkedin-logo.png";
 import Card from "react-bootstrap/Card";
 import Github from "../Images/github-sign.png";
 import Download from "../Images/download.png";
-import Resume from "../Images/Santiago-Solana-Resume-2021.docx";
+import Resume from "../Images/Santiago-Solana-Resume.pdf";
 
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
