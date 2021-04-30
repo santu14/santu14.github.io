@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.056d9d0e.chunk.css",
-    "main.js": "/static/js/main.4c8a7031.chunk.js",
-    "main.js.map": "/static/js/main.4c8a7031.chunk.js.map",
+    "main.js": "/static/js/main.d835e0c8.chunk.js",
+    "main.js.map": "/static/js/main.d835e0c8.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.291a5225.js",
     "runtime-main.js.map": "/static/js/runtime-main.291a5225.js.map",
     "static/css/2.92200efa.chunk.css": "/static/css/2.92200efa.chunk.css",
-    "static/js/2.8016c9ad.chunk.js": "/static/js/2.8016c9ad.chunk.js",
-    "static/js/2.8016c9ad.chunk.js.map": "/static/js/2.8016c9ad.chunk.js.map",
+    "static/js/2.a2932f5e.chunk.js": "/static/js/2.a2932f5e.chunk.js",
+    "static/js/2.a2932f5e.chunk.js.map": "/static/js/2.a2932f5e.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.92200efa.chunk.css.map": "/static/css/2.92200efa.chunk.css.map",
     "static/css/main.056d9d0e.chunk.css.map": "/static/css/main.056d9d0e.chunk.css.map",
-    "static/js/2.8016c9ad.chunk.js.LICENSE.txt": "/static/js/2.8016c9ad.chunk.js.LICENSE.txt",
+    "static/js/2.a2932f5e.chunk.js.LICENSE.txt": "/static/js/2.a2932f5e.chunk.js.LICENSE.txt",
     "static/media/Always Sunny Trivia.2a891c19.jpg": "/static/media/Always Sunny Trivia.2a891c19.jpg",
     "static/media/Always Sunny Trivia.4b41460d.gif": "/static/media/Always Sunny Trivia.4b41460d.gif",
     "static/media/Note-Taker-Animated.241efd5d.gif": "/static/media/Note-Taker-Animated.241efd5d.gif",
     "static/media/Note-Taker.554835b4.png": "/static/media/Note-Taker.554835b4.png",
-    "static/media/Santiago-Solana-Resume-2021.1bc2a9a5.docx": "/static/media/Santiago-Solana-Resume-2021.1bc2a9a5.docx",
+    "static/media/Santiago-Solana-Resume.604a0967.pdf": "/static/media/Santiago-Solana-Resume.604a0967.pdf",
     "static/media/Selfie.06d36e1d.jpg": "/static/media/Selfie.06d36e1d.jpg",
     "static/media/Weather-Dashboard.c92db4be.gif": "/static/media/Weather-Dashboard.c92db4be.gif",
     "static/media/Weather-dashboard-animated.26d4c7c9.gif": "/static/media/Weather-dashboard-animated.26d4c7c9.gif",
@@ -30,8 +30,8 @@
   "entrypoints": [
     "static/js/runtime-main.291a5225.js",
     "static/css/2.92200efa.chunk.css",
-    "static/js/2.8016c9ad.chunk.js",
+    "static/js/2.a2932f5e.chunk.js",
     "static/css/main.056d9d0e.chunk.css",
-    "static/js/main.4c8a7031.chunk.js"
+    "static/js/main.d835e0c8.chunk.js"
   ]
 }
